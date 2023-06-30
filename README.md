@@ -1,12 +1,12 @@
 # Ramin Sami . Jarvis Consulting
 
-I am a highly motivated software engineer with a solid educational background, passionate about the field of software development. I am currently seeking an exciting and challenging position where I can utilize my skills and expertise in designing and implementing innovative solutions. With a strong foundation in software engineering principles and hands-on experience in various programming languages, I am confident in my ability to contribute to the success of any development project. I am eager to collaborate with talented individuals and contribute to a team-driven environment that fosters creativity and growth.
+I am a highly motivated software engineering graduate from Ontario Tech University with a fundamental knowledge of software design, development, and testing. I started learning Java earlier in high school. Being the only girl in my programming class was a huge motivation for me to keep moving forward. Throughout my degree, I designed and developed projects incorporating data structures, artificial intelligence, and embedded systems that I am proud of. I once created a Python program using TensorFlow which allowed the user to generate an outfit by type. The model was trained using Keras API to classify images. I enjoy developing games on Python, Java, and C# in my free time. A few games I'm exceptionally proud of are Snake Game, Whack-A-Mole, Tic-Tac-Toe, and Sudoku. With a strong foundation in software engineering principles and hands-on experience in various programming languages. I am eager to collaborate with talented individuals and contribute to a team-driven environment that fosters creativity and growth.
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
+**Proficient:** Java, Python, RDBMS/SQL, Agile/Scrum, Git
 
-**Competent:** Python, JavaScript/TypeScript, HTML, CSS/Bootstrap, ReactJS
+**Competent:** Linux/Bash, JavaScript/TypeScript, HTML, CSS/Bootstrap, ReactJS, Jira
 
 **Familiar:** JQuery, Kotlin, C#, C/C++, PHP
 
@@ -15,31 +15,13 @@ I am a highly motivated software engineer with a solid educational background, p
 Project source code: [https://github.com/Jarvis-Consulting-Group/jarvis_data_eng-RaminSamii.git](https://github.com/Jarvis-Consulting-Group/jarvis_data_eng-RaminSamii.git)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/Jarvis-Consulting-Group/jarvis_data_eng-RaminSamii.git/tree/master/linux_sql)]: Responsibly designed and implemented a Minimum Viable Product (MVP) that caters to the specific business requirements of the Linux Cluster Administration team at Jarvis.As a developer I efficiently created records of hardware specifications of 10 servers and monitored node resource usage. The collected data was in an RDBMS in real-time.Implemented the program leveraging variour technologies and tools, such as Linux command lines, Bash scripts, PostgreSQL, docker,and more.
-
-**Core Java Apps** [[GitHub](https://github.com/Jarvis-Consulting-Group/jarvis_data_eng-RaminSamii.git/tree/master/core_java)]:
-      
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-
-**Springboot App** [[GitHub](https://github.com/Jarvis-Consulting-Group/jarvis_data_eng-RaminSamii.git/tree/master/springboot)]: Not Started
-
-**Python Data Analytics** [[GitHub](https://github.com/Jarvis-Consulting-Group/jarvis_data_eng-RaminSamii.git/tree/master/python_data_anlytics)]: Not Started
-
-**Hadoop** [[GitHub](https://github.com/Jarvis-Consulting-Group/jarvis_data_eng-RaminSamii.git/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/Jarvis-Consulting-Group/jarvis_data_eng-RaminSamii.git/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/Jarvis-Consulting-Group/jarvis_data_eng-RaminSamii.git/tree/master/cloud_devops)]: Not Started
+**Cluster Monitor** [[GitHub](https://github.com/Jarvis-Consulting-Group/jarvis_data_eng-RaminSamii.git/tree/master/linux_sql)]: Responsibly designed and implemented a Linux based Minimum Viable Product (MVP) that caters to the specific business requirements of the Linux Cluster Administration team at Jarvis. As a developer I efficiently created Bash scripts generting records of hardware specifications of 10 servers and monitored node resource usage. The collected data was stored using PostgreSQL in real-time and the database was provisioned using Docker.
 
 
 ## Highlighted Projects
-**Cloud Based HealthCare Service System**: Designed and created a cloud-based application depicting a Health care system with the incorporation of patient and doctor sides. Developed No-SQL database management for patient and doctor data. Assembled services like credential encryption, appointment scheduling, and video chat between a patient and a doctor.
+**Web based Cloud HealthCare Service System**: Designed and created a web application depicting a Health-Care system with personalized user experience for patient and client side. The concept was generated during the peak of Covid-19 virus in 2021. The application mimiced essential elements of a visit to the specialist's office while lessening however much human contact as could be expected. Enabled login validation using Cloud Firestore database. Implemented a video call experience between patient and doctor using Web Real-Time Communication (WebRTC) API on JavaScript. A peer-to peer virtual connection was setup up from doctor's end through signalling and generating a Session Description Protocol (SDP) offer and a code which would get stored in Firebase. The code was accesible for the patient on the web interface to join the Video Call appointment.
 
-**GPS Route Finder **: Developed a GPS application in Java. Users can define a map consisting of cities and routes or choose from a pre-existing set. Supported on demand queries to obtain optimal route between cities handled by an optimized variation of Dijkstras algorithm for shortest path.
-
-**Plagiarism Detector**: Programmed an algorithm inspired by Jaccard index to successfully detect similarities between two text documents and return a plagiarism score.
+**Hotel Database Management System**: Developed a database management system using SQL. The hotel had multiple rooms and floors, and these rooms were of different types. The system was managed by hotel employees by a web framework using HTML and CSS. The database was connected to the web app with PHP. Employees were able to query from the web app to register guests for check ins, check for available rooms, assign rooms from the available rooms directory, mark if a guest requires housekeeping, and check guests out.
 
 
 ## Professional Experiences
@@ -52,15 +34,10 @@ Project source code: [https://github.com/Jarvis-Consulting-Group/jarvis_data_eng
 
 
 ## Education
-**Ontario Tech University (2017-2022)**, Bachelor of Engineering (Honours), Software Engineering
-- To be Added
-- To be Added
-- To be Added
+**Ontario Tech University (2017-2022)**, Bachelor of oftware Engineering (Honours), Engineering and Applied Science
 
 
 ## Miscellaneous
-- To be Added
-- To be Added
-- To be Added
-- To be Added
-- To be Added
+- Avid Fitness Enthusiast
+- Enjoys Board Games
+- Likes Travelling
