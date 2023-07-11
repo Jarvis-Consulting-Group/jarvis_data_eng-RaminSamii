@@ -1,13 +1,13 @@
 ###### Question 1: Insert some data into a table
 
-```sql
+
 insert into cd.facilities (
   facid, name, membercost, guestcost, 
   initialoutlay, monthlymaintenance
 )
 values 
   (9, 'Spa', 20, 30, 100000, 800);
-```
+
 
 ###### Question 2: Insert calculated data into a table
 
