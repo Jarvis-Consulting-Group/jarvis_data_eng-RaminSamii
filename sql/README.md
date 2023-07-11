@@ -6,7 +6,7 @@ This RDBMS and SQL project is designed to apply SQL optimization. The objectives
 ###### Table Setup (DDL)
 
 ##cd.members
-
+```sql
     CREATE TABLE cd.members
     (
        memid integer NOT NULL, 
@@ -21,9 +21,9 @@ This RDBMS and SQL project is designed to apply SQL optimization. The objectives
        CONSTRAINT fk_members_recommendedby FOREIGN KEY (recommendedby)
             REFERENCES cd.members(memid) ON DELETE SET NULL
     );
-
+```
 ##cd.facilities
-
+```sql
     CREATE TABLE cd.facilities
     (
        facid integer NOT NULL, 
@@ -34,9 +34,9 @@ This RDBMS and SQL project is designed to apply SQL optimization. The objectives
        monthlymaintenance numeric NOT NULL, 
        CONSTRAINT facilities_pk PRIMARY KEY (facid)
     );
-       
+```       
 ##cd.bookings
-
+```sql
     CREATE TABLE cd.bookings
     (
        bookid integer NOT NULL, 
@@ -48,7 +48,7 @@ This RDBMS and SQL project is designed to apply SQL optimization. The objectives
        CONSTRAINT fk_bookings_facid FOREIGN KEY (facid) REFERENCES cd.facilities(facid),
        CONSTRAINT fk_bookings_memid FOREIGN KEY (memid) REFERENCES cd.members(memid)
     );
-           
+```           
 
 ###### Question 1: Show all members 
 
