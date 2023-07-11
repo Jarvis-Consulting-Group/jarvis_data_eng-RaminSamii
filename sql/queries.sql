@@ -11,7 +11,6 @@ values
 
 ###### Question 2: Insert calculated data into a table
 
-```sql
 insert into cd.facilities (
   facid, name, membercost, guestcost, 
   initialoutlay, monthlymaintenance
@@ -28,11 +27,11 @@ select
   30, 
   100000, 
   800;
-```
+
 
 ###### Question 3: Update some existing data
 
-```sql
+
 update 
   cd.facilities 
 set 
@@ -40,11 +39,11 @@ set
 where 
   facid = 1;
 
-```
+
 
 ###### Question 4: Update a row based on the contents of another row
 
-```sql
+
 update 
   cd.facilities facs 
 set 
@@ -66,27 +65,27 @@ set
   ) 
 where 
   facs.facid = 1;
-```
+
 
 ###### Question 5: Delete all bookings
 
-```sql
+
 delete from 
   cd.bookings;
-```
+
 
 ###### Question 6: Delete a member from the cd.members table
 
-```sql
+
 delete from 
   cd.members 
 where 
   memid = 37;
-```
+
 
 ###### Question 7: Control which rows are retrieved - part 2
 
-```sql
+
 select 
   facid, 
   name, 
@@ -99,33 +98,33 @@ where
   and (
     membercost < monthlymaintenance / 50.0
   );
-```
+
 
 ###### Question 8: Basic string searches
 
-```sql
+
 select 
   * 
 from 
   cd.facilities 
 where 
   name like '%Tennis%';
-```
+
 
 ###### Question 9: Matching against multiple possible values
 
-```sql
+
 select 
   * 
 from 
   cd.facilities 
 where 
   facid in (1, 5);
-```
+
 
 ###### Question 10: Working with dates
 
-```sql
+
 select 
   memid, 
   surname, 
@@ -135,11 +134,11 @@ from
   cd.members 
 where 
   joindate >= '2012-09-01';
-```
+
 
 ###### Question 11: Combining results from multiple queries
 
-```sql
+
 select 
   surname 
 from 
@@ -149,11 +148,11 @@ select
   name 
 from 
   cd.facilities;
-```
 
-###### Question 12: Retrieve the start times of members' bookings
 
-```sql
+###### Question 12: Retrieve the start times of members bookings
+
+
 select 
   bks.starttime 
 from 
@@ -162,11 +161,11 @@ from
 where 
   mems.firstname = 'David' 
   and mems.surname = 'Farrell';
-```
 
-###### Question 13: Retrieve the start times of members' bookings
 
-```sql
+###### Question 13: Retrieve the start times of members bookings
+
+
 select 
   bks.starttime as start, 
   facs.name as name 
@@ -181,11 +180,11 @@ where
   and bks.starttime < '2012-09-22' 
 order by 
   bks.starttime;
-```
+
 
 ###### Question 14: Produce a list of all members, along with their recommender
 
-```sql
+
 select 
   mems.firstname as memfname, 
   mems.surname as memsname, 
@@ -197,11 +196,11 @@ from
 order by 
   memsname, 
   memfname;
-```
+
 
 ###### Question 15: Produce a list of all members who have recommended another member
 
-```sql
+
 select 
   distinct recs.firstname as firstname, 
   recs.surname as surname 
@@ -211,11 +210,11 @@ from
 order by 
   surname, 
   firstname;
-```
+
 
 ###### Question 16: Produce a list of all members, along with their recommender, using no joins.
 
-```sql
+
 select 
   distinct mems.firstname || ' ' || mems.surname as member, 
   (
@@ -230,11 +229,11 @@ from
   cd.members mems 
 order by 
   member;
-```
+
 
 ###### Question 17: Count the number of recommendations each member makes.
 
-```sql
+
 select 
   recommendedby, 
   count(*) 
@@ -246,11 +245,11 @@ group by
   recommendedby 
 order by 
   recommendedby;
-```
+
 
 ###### Question 18: List the total slots booked per facility
 
-```sql
+
 select 
   facid, 
   sum(slots) as "Total Slots" 
@@ -260,11 +259,11 @@ group by
   facid 
 order by 
   facid;
-```
+
 
 ###### Question 19: List the total slots booked per facility in a given month
 
-```sql
+
 select 
   facid, 
   sum(slots) as "Total Slots" 
@@ -277,11 +276,11 @@ group by
   facid 
 order by 
   sum(slots);
-```
+
 
 ###### Question 20: List the total slots booked per facility per month
 
-```sql
+
 select 
   facid, 
   extract(
@@ -304,20 +303,20 @@ group by
 order by 
   facid, 
   month;
-```
+
 
 ###### Question 21: Find the count of members who have made at least one booking
 
-```sql
+
 select 
   count(distinct memid) 
 from 
   cd.bookings
-```
+
 
 ###### Question 22: List each members first booking after September 1st 2012
 
-```sql
+
 select 
   mems.surname, 
   mems.firstname, 
@@ -334,11 +333,11 @@ group by
   mems.memid 
 order by 
   mems.memid;
-```
+
 
 ###### Question 23: Produce a list of member names, with each row containing the total member count
 
-```sql
+
 select 
   (
     select 
@@ -352,11 +351,11 @@ from
   cd.members 
 order by 
   joindate
-```
+
 
 ###### Question 24: Produce a numbered list of members
 
-```sql
+
 select 
   (
     select 
@@ -370,11 +369,10 @@ from
   cd.members 
 order by 
   joindate
-```
+
 
 ###### Question 25: Output the facility id that has the highest number of slots booked, again
 
-```sql
 select 
   facid, 
   total 
@@ -400,29 +398,23 @@ from
   ) as ranked 
 where 
   rank = 1
-```
 
 ###### Question 26:  Format the names of members
 
-```sql
 select 
   surname || ', ' || firstname as name 
 from 
   cd.members
-```
 
 ###### Question 27: Find telephone numbers with parentheses
 
-```sql
 select 
   surname || ', ' || firstname as name 
 from 
   cd.members
-```
 
 ###### Question 28: Find telephone numbers with parentheses
 
-```sql
 select 
   substr (mems.surname, 1, 1) as letter, 
   count(*) as count 
@@ -432,7 +424,7 @@ group by
   letter 
 order by 
   letter
-```
+
 
 
 
