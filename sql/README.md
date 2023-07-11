@@ -1,8 +1,7 @@
 # Introduction
-(about 100-150 words)
-This RDBMS and SQL project is designed to apply SQL optimization. The objectives of the project incorporated CRUD operations(DQL, DDL, DML). The project entailed understanding data modeling strategies to ensure quality data governance. The setup included a project directory structure and GitHub to manage the project source code, a psql instance, and pgAdmin was used as IDE. Sample data was loaded and distributed among the database in three tables tracking values associated with each member, booking, and facility. The database was tested with SQL queries to access and manipulate various pieces of information
-# SQL Queries
+This RDBMS and SQL project is designed to apply SQL optimization. The objectives of the project incorporated CRUD operations(DQL, DDL, DML). The project entailed understanding data modeling strategies to ensure quality data governance. The setup included a project directory structure and GitHub to manage the project source code, a psql instance, and pgAdmin was used as IDE. Sample data was loaded and distributed among the database in three tables tracking values associated with each member, booking, and facility. The database was tested with SQL queries to access and manipulate various pieces of information.
 
+# SQL Queries
 ###### Table Setup (DDL)
 
 ##cd.members
