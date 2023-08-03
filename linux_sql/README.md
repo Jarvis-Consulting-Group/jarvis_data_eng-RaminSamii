@@ -53,6 +53,7 @@ Shell script description and usage (use markdown code block for script usage)
 
 ## Database Modeling
 - `host_info schema`
+
 | Column           | Data Type | Description                               |
 | --- | --- | --- |
 | id               |   SERIAL  | Unique ID (Primary Key)                   |
