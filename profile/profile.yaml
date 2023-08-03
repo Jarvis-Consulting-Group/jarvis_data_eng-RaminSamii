@@ -49,8 +49,8 @@ jarvis_projects:
     git_url: "/core_java"
     description:
    #   - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - JDBC App: The JDBC application is a system for performing CRUD operations (Create, Read, Update, Delete) on a database, utilizing the JDBC API. It integrates a PostgreSQL database within a Docker container, with Maven, and Git as the chosen version control system.
-      - Grep App: The Grep project recreates the Linux GREP command, which provides users an aid to be able  search for Strings in a file or a directory. The application offers two approaches for pattern searching.The regular appoach uses file I/O for regular sized files. The second approach uses Java Streams and functional programming to handle huge files. The application was also Dockerized on Docker, and pushed online to the docker hub where we can view the images."
+      - "JDBC App: The JDBC application is a system for performing CRUD operations (Create, Read, Update, Delete) on a database, utilizing the JDBC API. It integrates a PostgreSQL database within a Docker container, with Maven, and Git as the chosen version control system."
+      - "Grep App: The Grep project recreates the Linux GREP command, which provides users an aid to be able  search for Strings in a file or a directory. The application offers two approaches for pattern searching.The regular appoach uses file I/O for regular sized files. The second approach uses Java Streams and functional programming to handle huge files. The application was also Dockerized, and pushed online to the docker hub where we can view the images."
   #- name: "Springboot App"
   #  git_url: "/springboot"
   #  description: ""

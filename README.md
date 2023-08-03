@@ -19,6 +19,11 @@ Project source code: [https://github.com/Jarvis-Consulting-Group/jarvis_data_eng
 
 **RDBMS and SQL** [[GitHub](https://github.com/Jarvis-Consulting-Group/jarvis_data_eng-RaminSamii.git/tree/master/sql)]: Successfully designed a Database management system to apply SQL optimization. The project incorporated CRUD operations and entailed understanding of data modeling strategies to ensure quality data governance. As a developer I loaded and distributed sample data among the database in three tables tracking values associated with each member, booking, and facility. The database was tested with SQL queries to access and manipulate various pieces of information.
 
+**Core Java Apps** [[GitHub](https://github.com/Jarvis-Consulting-Group/jarvis_data_eng-RaminSamii.git/tree/master/core_java)]:
+      
+  - JDBC App: The JDBC application is a system for performing CRUD operations (Create, Read, Update, Delete) on a database, utilizing the JDBC API. It integrates a PostgreSQL database within a Docker container, with Maven, and Git as the chosen version control system.
+  - Grep App: The Grep project recreates the Linux GREP command, which provides users an aid to be able  search for Strings in a file or a directory. The application offers two approaches for pattern searching.The regular appoach uses file I/O for regular sized files. The second approach uses Java Streams and functional programming to handle huge files. The application was also Dockerized, and pushed online to the docker hub where we can view the images.
+
 
 ## Highlighted Projects
 **Web based Cloud HealthCare Service System**: Designed and created a web application depicting a Health-Care system with personalized user experience for patient and client side. The concept was generated during the peak of Covid-19 virus in 2021. The application mimiced essential elements of a visit to the specialist's office while lessening however much human contact as could be expected. Enabled login validation using Cloud Firestore database. Implemented a video call experience between patient and doctor using Web Real-Time Communication (WebRTC) API on JavaScript. A peer-to peer virtual connection was setup up from doctor's end through signalling and generating a Session Description Protocol (SDP) offer and a code which would get stored in Firebase. The code was accesible for the patient on the web interface to join the Video Call appointment.
@@ -36,7 +41,7 @@ Project source code: [https://github.com/Jarvis-Consulting-Group/jarvis_data_eng
 
 
 ## Education
-**Ontario Tech University (2017-2022)**, Bachelor of oftware Engineering (Honours), Engineering and Applied Science
+**Ontario Tech University (2017-2022)**, Bachelor of Software Engineering (Honours), Engineering and Applied Science
 
 
 ## Miscellaneous

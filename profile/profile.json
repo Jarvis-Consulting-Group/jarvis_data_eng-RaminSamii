@@ -2,7 +2,7 @@
   "education": [
     {
       "awards_achievements": null,
-      "degree": "Bachelor of oftware Engineering (Honours)",
+      "degree": "Bachelor of Software Engineering (Honours)",
       "department": "Engineering and Applied Science",
       "duration": "2017-2022",
       "school_name": "Ontario Tech University"
@@ -31,6 +31,14 @@
       "description": "Successfully designed a Database management system to apply SQL optimization. The project incorporated CRUD operations and entailed understanding of data modeling strategies to ensure quality data governance. As a developer I loaded and distributed sample data among the database in three tables tracking values associated with each member, booking, and facility. The database was tested with SQL queries to access and manipulate various pieces of information.",
       "git_url": "/sql",
       "name": "RDBMS and SQL"
+    },
+    {
+      "description": [
+        "JDBC App: The JDBC application is a system for performing CRUD operations (Create, Read, Update, Delete) on a database, utilizing the JDBC API. It integrates a PostgreSQL database within a Docker container, with Maven, and Git as the chosen version control system.",
+        "Grep App: The Grep project recreates the Linux GREP command, which provides users an aid to be able  search for Strings in a file or a directory. The application offers two approaches for pattern searching.The regular appoach uses file I/O for regular sized files. The second approach uses Java Streams and functional programming to handle huge files. The application was also Dockerized, and pushed online to the docker hub where we can view the images."
+      ],
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
     }
   ],
   "name": "Ramin Sami",
