@@ -28,7 +28,7 @@ crontab -e
 # Implemenation
 Discuss how you implement the project.
 ## Architecture
-![Cluster Diagram](/home/centos/dev/jarvis_data_eng_ramindemo/linux_sql/assets/cluster.png?raw=true "Cluster Diagram")
+![Cluster Diagram](/linux_sql/assets/cluster.png?raw=true "Cluster Diagram")
 
 ## Scripts
 Shell script description and usage (use markdown code block for script usage)
@@ -54,7 +54,7 @@ Shell script description and usage (use markdown code block for script usage)
 ## Database Modeling
 - `host_info schema`
 | Column           | Data Type | Description                               |
-| ---------------- | --------- | ----------------------------------------- |
+| --- | --- | --- |
 | id               |   SERIAL  | Unique ID (Primary Key)                   |
 | hostname         |  VARCHAR  | Hostname for the machine                  |
 | cpu_number       |  INTEGER  | Number of CPU's in host                   |
