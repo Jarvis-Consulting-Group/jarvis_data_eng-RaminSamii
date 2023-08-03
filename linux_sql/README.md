@@ -31,7 +31,6 @@ Discuss how you implement the project.
 ![Cluster Diagram](/linux_sql/assets/cluster.png?raw=true "Cluster Diagram")
 
 ## Scripts
-Shell script description and usage (use markdown code block for script usage)
 - psql_docker.sh
 * The script contains input command with username and password variables.
 * This script creates a psql instance within a docker container.
@@ -55,7 +54,7 @@ Shell script description and usage (use markdown code block for script usage)
 - `host_info schema`
 
 | Column           | Data Type | Description                               |
-| --- | --- | --- |
+| --- | :---: | --- |
 | id               |   SERIAL  | Unique ID (Primary Key)                   |
 | hostname         |  VARCHAR  | Hostname for the machine                  |
 | cpu_number       |  INTEGER  | Number of CPU's in host                   |
@@ -66,6 +65,7 @@ Shell script description and usage (use markdown code block for script usage)
 | total_mem        |  INTEGER  | Total idle memory in host                 |
 
 - `host_usage schema`
+
 | Column           | Data Type | Description                                 |
 | ---------------- | --------- | ------------------------------------------  |
 | timestamp        | TIMESTAMP | Timestamp for when usage data was inserted  |
@@ -77,8 +77,57 @@ Shell script description and usage (use markdown code block for script usage)
 | disk_available   |  INTEGER  | Available disk space (MB)                   |
 
 # Test
-How did you test your bash scripts DDL? What was the result?
--run the script with bash-x
+- Check if the Docker container is created
+ 
+```
+# Listing all the docker containers
+docker container ls -a 
+
+```
+
+- Check if the host_agent database is created
+
+```
+# Connecting to postgres database
+psql -h localhost -U postgres - host_agent
+# Listing all the databases
+\l
+
+```
+
+- Check if hardware info is inserted in host_info schema
+
+```
+# Running the script
+./script/host_info.sh localhost 5432 host_agent postgres password
+# Connecting to host_agent database
+psql -h localhost -U postgres - host_agent
+# Selecting data from host_info table
+SELECT * FROM HOST_INFO;
+
+```
+
+- Check if usage data is inserted in host_usage schema
+
+```
+# Running the script
+./script/host_info.sh localhost 5432 host_agent postgres password
+# Connecting to host_agent database
+psql -h localhost -U postgres - host_agent
+# Selecting data from host_usage table
+SELECT * FROM HOST_USAGE;
+
+```
+
+- Check if host_info and host_usage schemas are created via ddl.sql
+
+```
+# Running ddl.sql script
+psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
+# Checking tables in host_agent database
+\dt
+
+```
 
 # Deployment
 ###GitHub
