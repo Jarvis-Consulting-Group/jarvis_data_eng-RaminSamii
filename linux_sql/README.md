@@ -1,6 +1,5 @@
 # Introduction
-(all words)
-Discuss the design of the project. What does this project/product do? Who are the users? What are the technologies you have used? (e.g. bash, docker, git, etc..)
+Linux Cluster Monitoring Agent app is a solution created to manage a cluster of 10 servers. Users of the servers can simply track hardware and usage data. The app is used by the linux cluster administration team for efficient operations and maintenance. To implement the app i started by installing docker and provisioning a postGRESQL instance and client cli tool.  I created a database schema for storing hardware statistics inside of a docker container to make sure the gathered data is well-organized. Then i went about created two bash scripts host_info.sh and host_usage.sh the host_info.sh script was run once during installation to retrieve and save hardware information in the PostgreSQL database. On the other hand, the host_usage.sh script was set up to run every minute through a cron job, allowing for minute-by-minute server usage monitoring. 
 
 # Quick Start
 - Start a psql instance using psql_docker.sh
@@ -29,7 +28,7 @@ crontab -e
 # Implemenation
 Discuss how you implement the project.
 ## Architecture
-Draw a cluster diagram with three Linux hosts, a DB, and agents (use draw.io website). Image must be saved to the `assets` directory.
+![Cluster Diagram](/home/centos/dev/jarvis_data_eng_ramindemo/linux_sql/assets/cluster.png?raw=true "Cluster Diagram")
 
 ## Scripts
 Shell script description and usage (use markdown code block for script usage)
@@ -54,27 +53,27 @@ Shell script description and usage (use markdown code block for script usage)
 
 ## Database Modeling
 - `host_info schema`
-| Column            | Data Type | Description |
-| :---------------- | :---------: | --------------------: |
-| id                |  SERIAL  | Unique ID (Primary Key) |
-| hostname          |   VARCHAR   | Hostname for the machine |
-| cpu_number    |  INTEGER   | Number of CPU's in host |
-| cpu_architecture |  VARCHAR   | CPU Architecture |
-| cpu_mhz                |  FLOAT  | CPU clock speed (MHz) |
-| l2_cache          |  INTEGER  | L2 cache size |
-| timestamp    |  TIMESTAMP   | Timestamp for when the data got collected |
-| total_mem |  INTEGER   | Total idle memory in host |
+| Column           | Data Type | Description                               |
+| ---------------- | --------- | ----------------------------------------- |
+| id               |   SERIAL  | Unique ID (Primary Key)                   |
+| hostname         |  VARCHAR  | Hostname for the machine                  |
+| cpu_number       |  INTEGER  | Number of CPU's in host                   |
+| cpu_architecture |  VARCHAR  |     CPU Architecture                      |
+| cpu_mhz          |    FLOAT  |   CPU clock speed (MHz)                   |
+| l2_cache         |  INTEGER  |      L2 cache size                        |
+| timestamp        | TIMESTAMP | Timestamp for when the data got collected |
+| total_mem        |  INTEGER  | Total idle memory in host                 |
 
 - `host_usage schema`
-| Column            | Data Type | Description |
-| :---------------- | :---------: | --------------------: |
-| timestamp                |  TIMESTAMP  | Timestamp for when usage data was inserted |
-| host_id          |  INTEGER   | Host ID (References id in host_info) |
-| memory_free    |  INTEGER   | Total idle memory |
-| cpu_idle |  INTEGER   | Percentage of CPU idle time |
-| cpu_kernel                |  INTEGER  | Percentage of CPU time spent running kernel |
-| disk_io        |  INTEGER  | All current disk I/O operations |
-| disk_available    |  INTEGER   | Available disk space (MB) |
+| Column           | Data Type | Description                                 |
+| ---------------- | --------- | ------------------------------------------  |
+| timestamp        | TIMESTAMP | Timestamp for when usage data was inserted  |
+| host_id          |  INTEGER  | Host ID (References id in host_info)        |
+| memory_free      |  INTEGER  | Total idle memory                           |
+| cpu_idle         |  INTEGER  | Percentage of CPU idle time                 |
+| cpu_kernel       |  INTEGER  | Percentage of CPU time spent running kernel |
+| disk_io          |  INTEGER  | All current disk I/O operations             |
+| disk_available   |  INTEGER  | Available disk space (MB)                   |
 
 # Test
 How did you test your bash scripts DDL? What was the result?
