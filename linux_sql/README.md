@@ -26,7 +26,6 @@ crontab -e
 `
 
 # Implemenation
-Discuss how you implement the project.
 ## Architecture
 ![Cluster Diagram](/linux_sql/assets/cluster.png?raw=true "Cluster Diagram")
 
@@ -54,7 +53,7 @@ Discuss how you implement the project.
 - `host_info schema`
 
 | Column           | Data Type | Description                               |
-| --- | :---: | --- |
+| :---: | :---: | :---: |
 | id               |   SERIAL  | Unique ID (Primary Key)                   |
 | hostname         |  VARCHAR  | Hostname for the machine                  |
 | cpu_number       |  INTEGER  | Number of CPU's in host                   |
@@ -67,7 +66,7 @@ Discuss how you implement the project.
 - `host_usage schema`
 
 | Column           | Data Type | Description                                 |
-| ---------------- | --------- | ------------------------------------------  |
+| :--------------: | :-------: | :----------------------------------------:  |
 | timestamp        | TIMESTAMP | Timestamp for when usage data was inserted  |
 | host_id          |  INTEGER  | Host ID (References id in host_info)        |
 | memory_free      |  INTEGER  | Total idle memory                           |
@@ -84,7 +83,6 @@ Discuss how you implement the project.
 docker container ls -a 
 
 ```
-
 - Check if the host_agent database is created
 
 ```
@@ -94,7 +92,6 @@ psql -h localhost -U postgres - host_agent
 \l
 
 ```
-
 - Check if hardware info is inserted in host_info schema
 
 ```
@@ -106,7 +103,6 @@ psql -h localhost -U postgres - host_agent
 SELECT * FROM HOST_INFO;
 
 ```
-
 - Check if usage data is inserted in host_usage schema
 
 ```
@@ -118,7 +114,6 @@ psql -h localhost -U postgres - host_agent
 SELECT * FROM HOST_USAGE;
 
 ```
-
 - Check if host_info and host_usage schemas are created via ddl.sql
 
 ```
@@ -128,7 +123,6 @@ psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
 \dt
 
 ```
-
 # Deployment
 ###GitHub
 - A GitHub repository maintains `psql_docker.sh`, `host_info.sh`, `host_usage.sh` and `ddl.sql`.
