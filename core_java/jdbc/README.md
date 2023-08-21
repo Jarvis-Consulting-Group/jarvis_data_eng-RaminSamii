@@ -4,7 +4,7 @@ The goal of this project was to develop a Java application that connects to and 
 # Implementaiton
 ## ER Diagram
 ER diagram
-![ER Diagram](/core_java/jdbc/assets/ERD-jdbc.png?raw=true)
+![](/core_java/jdbc/assets/ERD-jdbc.png?raw=true)
 
 ## Design Patterns
 The DAO (Data Access Object) and Repository design patterns are both implemented as part of the project.
