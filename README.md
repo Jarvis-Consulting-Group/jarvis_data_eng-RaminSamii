@@ -45,6 +45,6 @@ Project source code: [https://github.com/Jarvis-Consulting-Group/jarvis_data_eng
 
 
 ## Miscellaneous
-- Avid Fitness Enthusiast
-- Enjoys Board Games
-- Likes Travelling
+- Regularly engage in strength training, cardio workouts, and yoga to maintain a healthy lifestyle. Regularly attend classes, maintain a daily meditation practice, and apply principles of mindfulness to enhance focus and productivity in both personal and professional settings.
+- Enthusiastic player of a wide range of board games, from complex strategy games like Risk to collaborative team games like Codenames. Participate in local game nights, honing strategic thinking, communication, and adaptability through various game scenarios.
+- Avid road trip traveler who has explored diverse cultures across Ontario. Proficient in trip planning, budget management, and problem-solving during extended journeys, fostering adaptability and a strong sense of adventure. 
