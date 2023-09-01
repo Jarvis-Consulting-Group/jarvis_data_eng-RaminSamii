@@ -1,0 +1,125 @@
+# Preferred name (Characters only)
+name: "Ramin Sami"
+# Your GitHub repo root URL
+github_repo_root_url: https://github.com/Jarvis-Consulting-Group/jarvis_data_eng-RaminSamii.git
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: I am a highly motivated software engineering graduate from Ontario Tech University with a fundamental knowledge of software design, development, and testing. I started learning Java earlier in high school. Being the only girl in my programming class was a huge motivation for me to keep moving forward. Throughout my degree, I designed and developed projects incorporating data structures, artificial intelligence, and embedded systems that I am proud of. I once created a Python program using TensorFlow which allowed the user to generate an outfit by type. The model was trained using Keras API to classify images. I enjoy developing games on Python, Java, and C# in my free time. A few games I'm exceptionally proud of are Snake Game, Whack-A-Mole, Tic-Tac-Toe, and Sudoku. With a strong foundation in software engineering principles and hands-on experience in various programming languages. I am eager to collaborate with talented individuals and contribute to a team-driven environment that fosters creativity and growth.
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - Java
+    - Python
+    - RDBMS/SQL
+    - Agile/Scrum
+    - Git
+  # At least 5 skills
+  competent:
+    - Linux/Bash
+    - JavaScript/TypeScript
+    - HTML
+    - CSS/Bootstrap
+    - ReactJS
+    - Jira
+  # At least 5 skills
+  familiar:
+    - JQuery
+    - Kotlin
+    - C#
+    - C/C++
+    - PHP
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Responsibly designed and implemented a Linux based Minimum Viable Product (MVP) that caters to the specific business requirements of the Linux Cluster Administration team at Jarvis. As a developer I efficiently created Bash scripts generting records of hardware specifications of 10 servers and monitored node resource usage. The collected data was stored using PostgreSQL in real-time and the database was provisioned using Docker. 
+  - name: "RDBMS and SQL"
+    git_url: "/sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    #     # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Successfully designed a Database management system to apply SQL optimization. The project incorporated CRUD operations and entailed understanding of data modeling strategies to ensure quality data governance. As a developer I loaded and distributed sample data among the database in three tables tracking values associated with each member, booking, and facility. The database was tested with SQL queries to access and manipulate various pieces of information.  
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description:
+   #   - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      - "JDBC App: The JDBC application is a system for performing CRUD operations (Create, Read, Update, Delete) on a database, utilizing the JDBC API. It integrates a PostgreSQL database within a Docker container, with Maven, and Git as the chosen version control system."
+      - "Grep App: The Grep project recreates the Linux GREP command, which provides users an aid to be able  search for Strings in a file or a directory. The application offers two approaches for pattern searching.The regular appoach uses file I/O for regular sized files. The second approach uses Java Streams and functional programming to handle huge files. The application was also Dockerized, and pushed online to the docker hub where we can view the images."
+  #- name: "Springboot App"
+  #  git_url: "/springboot"
+  #  description: ""
+ # - name: "Python Data Analytics"
+  #  git_url: "/python_data_anlytics"
+  #  description: ""
+ # - name: "Hadoop"
+ #   git_url: "/hadoop"
+ #   description: ""
+ # - name: "Spark"
+ #   git_url: "/spark"
+  #  description: ""
+ # - name: "Cloud/DevOps"
+ #   git_url: "/cloud_devops"
+ #   description: ""
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+    #project name
+  - name: "Web based Cloud HealthCare Service System"
+    #URL is optional
+    git_url: 
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Designed and created a web application depicting a Health-Care system with personalized user experience for patient and client side. The concept was generated during the peak of Covid-19 virus in 2021. The application mimiced essential elements of a visit to the specialist's office while lessening however much human contact as could be expected. Enabled login validation using Cloud Firestore database. Implemented a video call experience between patient and doctor using Web Real-Time Communication (WebRTC) API on JavaScript. A peer-to peer virtual connection was setup up from doctor's end through signalling and generating a Session Description Protocol (SDP) offer and a code which would get stored in Firebase. The code was accesible for the patient on the web interface to join the Video Call appointment. 
+  - name: "Hotel Database Management System"
+    git_url:
+    description: Developed a database management system using SQL. The hotel had multiple rooms and floors, and these rooms were of different types. The system was managed by hotel employees by a web framework using HTML and CSS. The database was connected to the web app with PHP. Employees were able to query from the web app to register guests for check ins, check for available rooms, assign rooms from the available rooms directory, mark if a guest requires housekeeping, and check guests out.   
+ 
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Software Developer"
+    company: "Jarvis"
+    duration: "2023-present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Developed, analyzed, and modified programming systems, which involved tasks such as encoding, testing, and debugging. Gained valuable experience working with diverse arrays of large data sets and large-scale data platforms. Following agile methodologies and utilizing git-flow, successfully developed applications that ran within Docker containers. Actively contributed to code-review sessions, ensuring that the code quality aligned with the specific business and project requirements."
+  - title: "Programming Instructor"
+    company: "Zebra Robotics"
+    duration: "2022-2023"
+    description: "Taught 100+ students (grades 5-12) HTML, CSS, Python, JavaScript and Java. Delivered STEM based curricula to students of various ages, and periodically helped create said curricula. Acted as one of the lead delivery facilitators for workshops and modules."
+  - title: "Full Stack Developer"
+    company: "Finaeo Inc."
+    duration: "2021" 
+    description: "Managed development projects through completion, optimizing all cross-browser and multiplatform compatibility. Gained technical development skills such as JavaScript/TypeScript as well as Git and other workflow experience. Managed time-sensitive updates, including content changes and upgrades. Provided input to the continual development of tooling and reporting to add tangible business benefits. " 
+
+#List of edcuation
+education: 
+  - school_name: "Ontario Tech University"
+    duration: "2017-2022"
+    degree: "Bachelor of Software Engineering (Honours)"
+    department: "Engineering and Applied Science"
+    # optional
+    awards_achievements: 
+    #  - ""
+     # - ""
+     # - ""
+#Optional section
+others:
+#    #category
+  - title: "Certificates"
+    #list of items
+    bullets:
+      - "Regularly engage in strength training, cardio workouts, and yoga to maintain a healthy lifestyle. Regularly attend classes, maintain a daily meditation practice, and apply principles of mindfulness to enhance focus and productivity in both personal and professional settings."
+  - title: "Awards"
+    bullets:
+      - "Enthusiastic player of a wide range of board games, from complex strategy games like Risk to collaborative team games like Codenames. Participate in local game nights, honing strategic thinking, communication, and adaptability through various game scenarios."
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Avid road trip traveler who has explored diverse cultures across Ontario. Proficient in trip planning, budget management, and problem-solving during extended journeys, fostering adaptability and a strong sense of adventure. "
