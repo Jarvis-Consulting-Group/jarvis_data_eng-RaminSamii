@@ -23,22 +23,27 @@
   ],
   "jarvis_projects": [
     {
-      "description": "Responsibly designed and implemented a Linux based Minimum Viable Product (MVP) that caters to the specific business requirements of the Linux Cluster Administration team at Jarvis. As a developer I efficiently created Bash scripts generting records of hardware specifications of 10 servers and monitored node resource usage. The collected data was stored using PostgreSQL in real-time and the database was provisioned using Docker.",
+      "description": "Linux Cluster Monitoring Agent app is a solution created to manage a cluster of 10 servers. Users of the servers can simply track hardware and usage data. The app is used by the linux cluster administration team for efficient operations and maintenance. To implement the app i started by installing docker and provisioning a postGRESQL instance and client cli tool. I created a database schema for storing hardware statistics inside of a docker container to make sure the gathered data is well-organized. Then i went about created two bash scripts host_info.sh and host_usage.sh the host_info.sh script was run once during installation to retrieve and save hardware information in the PostgreSQL database. On the other hand, the host_usage.sh script was set up to run every minute through a cron job, allowing for minute-by-minute server usage monitoring. ",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
     },
     {
-      "description": "Successfully designed a Database management system to apply SQL optimization. The project incorporated CRUD operations and entailed understanding of data modeling strategies to ensure quality data governance. As a developer I loaded and distributed sample data among the database in three tables tracking values associated with each member, booking, and facility. The database was tested with SQL queries to access and manipulate various pieces of information.",
+      "description": "This RDBMS and SQL project is designed to apply SQL optimization. The objectives of the project incorporated CRUD operations (DQL, DDL, DML). The project entailed understanding data modeling strategies to ensure quality data governance. The setup included a project directory structure and GitHub to manage the project source code, a psql instance, and pgAdmin was used as IDE. Sample data was loaded and distributed among the database in three tables tracking values associated with different columns. The database was tested with SQL queries to access data",
       "git_url": "/sql",
       "name": "RDBMS and SQL"
     },
     {
       "description": [
-        "JDBC App: The JDBC application is a system for performing CRUD operations (Create, Read, Update, Delete) on a database, utilizing the JDBC API. It integrates a PostgreSQL database within a Docker container, with Maven, and Git as the chosen version control system.",
-        "Grep App: The Grep project recreates the Linux GREP command, which provides users an aid to be able  search for Strings in a file or a directory. The application offers two approaches for pattern searching.The regular appoach uses file I/O for regular sized files. The second approach uses Java Streams and functional programming to handle huge files. The application was also Dockerized, and pushed online to the docker hub where we can view the images."
+        "JDBC App: The goal of the JDBC project was to develop a Java application that connects to and communicates with a PSQL (PostgreSQL) database using the JDBC API. To make it easier to manipulate data in our PSQL database, we introduced basic CRUD actions.A docker container image was created to run PSQL. We constructed the CRUD operations after connecting Java and PSQL, and we checked our solution by consulting our database. We ran CRUD operations on a variety of default values that we loaded into the table. Maven was used to manage dependencies for the project and as i mentioned the testing was done by running CRUD actions on the database.",
+        "Grep App: The grep app utilizes Two methods for effectively searching patterns within files in a directory. The Stream-Based Approach uses Java Streams and functional programming concepts to analyse big datasets with clear and elegan code. It is implemented in the StreamJavaGrepImp class. The application effectively manages files that are larger than the physical memory of the system while retaining a small heap memory footprint (e.g., 10-20MB) by using streams. This method is especially useful for managing large datasets, making it the best choice in situations when memory efficiency is an issue. On the other hand The JavaGrepImp class implements the Traditional Approach, which is better suited to processing moderate-sized data sets because it uses standard file I/O and looping capabilities. it offers a dependable and simple way to find patterns in files. Grep was developed using core Java, Java Streams for the Stream-Based Approach, and Apache Maven as the build tool. The application is also Dockerized, making deployment across many enviroments simple."
       ],
       "git_url": "/core_java",
       "name": "Core Java Apps"
+    },
+    {
+      "description": "Developed customized marketing tactics by using advanced data analytics tools to analyze a company's transactional data and get insights into customer shopping behavior. I used the Pandas, Numpy, Matplotlib, and SQLAlchemy libraries to undertake in-depth data analysis using Python as the primary programming language. The entire research was done in a Jupyter notebook setting, where I easily accessed information from both CSV files and a PostgreSQL database that was generated from the company's data warehouse. The notebook, which was running on a Jupyter server, produced intricate visualizations, such as plots showing monthly sales patterns, order placements, client counts, and, most importantly, the segmentation of the customer base based on recentness, frequency, and money. With the use of data-driven insights, this project demonstrated expertise in data analysis, software tools, and database integration.",
+      "git_url": "/python_data_anlytics",
+      "name": "Python Data Analytics"
     }
   ],
   "name": "Ramin Sami",
